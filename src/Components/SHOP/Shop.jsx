@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
+import { addToLs } from '../Utilities/ManageLS';
 import './Shop.css';
 const Shop = () => {
 
@@ -19,6 +20,7 @@ const Shop = () => {
         // b=[...a,6,7]  /* 1,2,3,6,7] */
         let newcart = [...cart, product]
         setCart(newcart);
+        addToLs(product.id)
     }
     return (
         <div className="main">
