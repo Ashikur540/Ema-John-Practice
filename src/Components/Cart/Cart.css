@@ -1,0 +1,6 @@
+.carts-container {
+  position: sticky;
+  top: 0;
+  text-align: left;
+  padding: 0 1rem;
+}
